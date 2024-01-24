@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 const connectDb = async () => {
     try {
-        const connect = await mongoose.connect('mongodb+srv://admin:admin@dawidcluster.djmahzi.mongodb.net/?retryWrites=true&w=majority');
+        const connect = await mongoose.connect('mongodb+srv://admin:admin@dawidcluster.djmahzi.mongodb.net/mycontacts-backed?retryWrites=true&w=majority');
         console.log(
             "Databaes connected ",
             connect.connection.host,
